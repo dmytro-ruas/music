@@ -9,12 +9,17 @@
     </head>
     <body>
         <!-- <audio controls src="./jingle-bells.mp3"></audio> -->
-        <div id="music-player">
-            <img id="song-image" src="./album-art1.jpg"/>
-            <div id="song-name">Song</div>
-            <div id="song-artist">Artist</div>
 
-            <input id="slider-song" type="range">
+        <img id="song-image" src="./album-art1.jpg"/>
+
+        <div id="music-player">
+            <div id="song-artist">Artist</div>
+            <div id="song-name">Song</div>
+        </div>
+
+        <div class="controls">
+
+        <input id="slider-song" type="range">
 
             <div id="music-buttons">
                 <i id="shuffle-song" class="fa-solid fa-shuffle"></i>                
@@ -24,6 +29,14 @@
                 <i id="repeat-song" class="fa-solid fa-repeat"></i>                
             </div>
         </div>
+
+        </div>
         <script src="music-player.js"></script>
+
+            <div class="search">
+        <input type="text" id="term" placeholder="type something"><br>
+        <button onClick="searchiTunes()">Click me</button>
+        <!-- <audio controls id="player" type="audio/mp4"></audio> -->
+    </div>
     </body>
 </html>
