@@ -10,26 +10,27 @@
     <body>
         <!-- <audio controls src="./jingle-bells.mp3"></audio> -->
 
+
+        <div class="music-footer">
+
         <img id="song-image" src="./album-art1.jpg"/>
-
-        <div id="music-player">
-            <div id="song-artist">Artist</div>
-            <div id="song-name">Song</div>
-        </div>
-
-        <div class="controls">
-
-        <input id="slider-song" type="range">
-
-            <div id="music-buttons">
-                <i id="shuffle-song" class="fa-solid fa-shuffle"></i>                
-                <i id="prev-song" class="fa-solid fa-backward-step fa-2x"></i>
-                <i id="playpause-song" class="fa-solid fa-circle-play fa-3x"></i>
-                <i id="next-song" class="fa-solid fa-forward-step fa-2x"></i>
-                <i id="repeat-song" class="fa-solid fa-repeat"></i>                
+            <div class="song-info">
+                <div id="song-artist">Artist</div>
+                <div id="song-name">Song</div>
             </div>
-        </div>
 
+            <div class="controls">
+                <input id="slider-song" type="range">
+                <div class="music-buttons">
+                    <i id="shuffle-song" class="fa-solid fa-shuffle"></i>                
+                    <i id="prev-song" class="fa-solid fa-backward-step fa-1.5x"></i>
+                    <i id="playpause-song" class="fa-solid fa-circle-play fa-2x"></i>
+                    <i id="next-song" class="fa-solid fa-forward-step fa-1.5x"></i>
+                    <i id="repeat-song" class="fa-solid fa-repeat"></i>                
+                </div>
+            </div>
+
+            </div>
         </div>
         <script src="music-player.js"></script>
 

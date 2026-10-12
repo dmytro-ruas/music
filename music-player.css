@@ -5,9 +5,11 @@ body {
 
 }
 
-#music-player {
+.song-info {
+    padding: 10px;
+    font-size: 13px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }
@@ -18,25 +20,20 @@ body {
     border-radius: 10px;
 }
 
-#song-name {
-    /* margin-top: 20px; */
-    font-size: 1em;
-}
-
-#music-buttons {
+.controls{
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    margin-top: 20px;
-    align
 }
 
-#music-buttons i {
-    padding: 10px;
-    /* color: red; */
+.music-buttons {
+    padding: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #slider-song {
-    /* accent-color: red; */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -60,4 +57,10 @@ body {
 }
 #slider-song:hover, #slider-song::-webkit-slider-thumb:hover{
     background-color: lime;
+}
+
+.music-footer{
+    display: flex;
+    flex: row;
+    justify-content: space-between;
 }
