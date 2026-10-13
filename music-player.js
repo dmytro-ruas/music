@@ -101,7 +101,11 @@ function searchiTunes() {
         audio: data.results[0].previewUrl
       }
 
-      songs.push(new_song);
+      console.log(takeTenSearches(data));
+      toRet = takeTenSearches(data);
+      return toRet;
+
+    //   songs.push(new_song);
       console.log(songs);
       updateSong();
     })
@@ -123,12 +127,12 @@ function takeTenSearches(data){
         audio: data.results[i].previewUrl
       }
       top_results.push(new_song);
-
-      return top_results;
     }
+    return top_results;
 
 }
 
-function searchMenu(){
+function searchMenu(tenSearches){
+    document.createElement()
 
 }
