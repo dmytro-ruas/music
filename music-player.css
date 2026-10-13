@@ -2,16 +2,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-
+    color: white;
+    background-color: darkslategray;
 }
 
-.song-info {
+.song-info-text {
     padding: 10px;
     font-size: 13px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+}
+
+.song-info{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
 }
 
 #song-image {
@@ -24,6 +31,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    align-self: center 
 }
 
 .music-buttons {
@@ -62,5 +70,5 @@ body {
 .music-footer{
     display: flex;
     flex: row;
-    justify-content: space-between;
+    background-color: black;
 }

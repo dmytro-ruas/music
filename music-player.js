@@ -111,3 +111,24 @@ function searchiTunes() {
     });
 }
 
+function takeTenSearches(data){
+
+    top_results = [];
+
+    for(let i = 0; i < 10; i++){
+        new_song = {
+        image: data.results[i].artworkUrl100,
+        name: data.results[i].trackName,
+        artist: data.results[i].artistName,
+        audio: data.results[i].previewUrl
+      }
+      top_results.push(new_song);
+
+      return top_results;
+    }
+
+}
+
+function searchMenu(){
+
+}
