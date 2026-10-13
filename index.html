@@ -10,8 +10,11 @@
     <body>
         <!-- <audio controls src="./jingle-bells.mp3"></audio> -->
 
-
-        <div class="music-footer">
+        <div class="search-container">
+            <input type="text" id="term" placeholder="type something"><br>
+            <button onClick="searchiTunes()">Search</button>
+        <div>
+        <div class="music-player">
 
         <div class="song-info">
             <img id="song-image" src="./album-art1.jpg"/>
@@ -34,12 +37,10 @@
 
             </div>
         </div>
-        <script src="music-player.js"></script>
 
-            <div class="search">
-        <input type="text" id="term" placeholder="type something"><br>
-        <button onClick="searchiTunes()">Click me</button>
-        <!-- <audio controls id="player" type="audio/mp4"></audio> -->
-    </div>
+        <div class="audio-controls-container">
+
+        </div>
+        <script src="music-player.js"></script>
     </body>
 </html>
