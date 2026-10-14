@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: darkslategray;
+    background-color: #121212;
     margin: 0;
     padding: 0;
 }
@@ -44,7 +44,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 300px;
+    width: 500px;
     height: 5px;
     background: white;
     border: 1px solid black;
@@ -80,8 +80,10 @@ body {
 .search-container{
     background-color: black;
     justify-content: center;
+    align-items: center;
     display: flex;
     width: 100%;
+    height: 64px;
 }
 
 .audio-controls-container{
@@ -94,4 +96,9 @@ body {
     width: 33%;
     align-items: center;  
     align-self: center   
+}
+
+.song-grid-container{
+    display: flex;
+    flex-direction: row;
 }
