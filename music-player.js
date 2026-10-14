@@ -122,29 +122,44 @@ function searchMenu(tenSearches){
     console.log("hello search menu")
     // console.log(tenSearches);
     for(let i = 0; i < 10; i++){
+
         let div = document.createElement("div");
+        div.setAttribute("class", "song-container")
         // maybe add an ID to show which number song this is? 
 
+        let div_number = document.createElement("div")
+        let text_number = document.createTextNode(`${[i + 1]}`);
+        div_number.appendChild(text_number)
         let img = document.createElement("img");
-
-        console.log(tenSearches[i].image)
-
         img.setAttribute("src", tenSearches[i].image)
+
+    
+        
 
         let div_artist = document.createElement("div");
         let text_artist = document.createTextNode(`${tenSearches[i].artist}`);
         div_artist.appendChild(text_artist)
-
         let div_songname = document.createElement("div");
         let text_song = document.createTextNode(`${tenSearches[i].name}`);
         div_songname.appendChild(text_song)
 
-        div.append(img, div_artist, div_songname);
+        // let div_text = document.createElement("div"); 
+        // div.setAttribute("class", "div-text")
+        // div_text.append(div_songname, div_artist);
+
+
+        div.append(div_number, img, div_artist, div_songname);
 
         let main_div = document.getElementById("song-grid-container");
-        
+
         main_div.appendChild(div);
 
     }
 
+}
+
+
+function clearBox()
+{
+    document.getElementById("song-grid-container").innerHTML = "";
 }

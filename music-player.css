@@ -100,5 +100,16 @@ body {
 
 .song-grid-container{
     display: flex;
+    flex-direction: column;
+}
+
+.song-container{
+    display: flex;
     flex-direction: row;
+    margin: 5px;
+    justify-items: stretch;
+}
+
+.song-container,image{
+    height: 45px;
 }
