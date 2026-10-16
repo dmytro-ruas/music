@@ -100,16 +100,30 @@ body {
 
 .song-grid-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .song-container{
     display: flex;
     flex-direction: row;
     margin: 5px;
+    width: 30%;
     justify-items: stretch;
 }
 
 .song-container,image{
-    height: 45px;
+    height: 100px;
+}
+
+.song-container, p, p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.p_text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

@@ -121,34 +121,34 @@ function takeTenSearches(data){
 function searchMenu(tenSearches){
     console.log("hello search menu")
     // console.log(tenSearches);
-    for(let i = 0; i < 10; i++){
+    for(let i = 0; i < 5; i++){
 
         let div = document.createElement("div");
         div.setAttribute("class", "song-container")
         // maybe add an ID to show which number song this is? 
 
-        let div_number = document.createElement("div")
+        let p_number = document.createElement("p")
         let text_number = document.createTextNode(`${[i + 1]}`);
-        div_number.appendChild(text_number)
+        p_number.appendChild(text_number)
         let img = document.createElement("img");
         img.setAttribute("src", tenSearches[i].image)
 
     
         
 
-        let div_artist = document.createElement("div");
+        let p_artist = document.createElement("p");
         let text_artist = document.createTextNode(`${tenSearches[i].artist}`);
-        div_artist.appendChild(text_artist)
-        let div_songname = document.createElement("div");
+        p_artist.appendChild(text_artist)
+        let p_songname = document.createElement("p");
         let text_song = document.createTextNode(`${tenSearches[i].name}`);
-        div_songname.appendChild(text_song)
+        p_songname.appendChild(text_song)
 
-        // let div_text = document.createElement("div"); 
-        // div.setAttribute("class", "div-text")
-        // div_text.append(div_songname, div_artist);
+        let p_text = document.createElement("p"); 
+        p_text.setAttribute("class", "p-text")
+        p_text.append(p_songname, p_artist);
 
 
-        div.append(div_number, img, div_artist, div_songname);
+        div.append(p_number, img, p_text);
 
         let main_div = document.getElementById("song-grid-container");
 
